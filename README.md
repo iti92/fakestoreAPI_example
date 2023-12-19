@@ -1,9 +1,9 @@
 > [!IMPORTANT]  
 > This application use cookie. To use full functionality of this application, please run it on dev mode or upload it to a server.
 
-# English Vocabulary Trainer
+# Fake API store example
 
-This is a English Vocabulary Trainer app developed based on test requirements for Fundraiseup by Topal Iulian
+This is an mobile first app that use data from https://fakestoreapi.com/ developed by Topal Iulian.
 
 ## Prerequisites
 
@@ -15,10 +15,10 @@ Before you begin, ensure you have met the following requirements:
 
 ## Getting Started
 
-1. **Clone the [repository](https://github.com/fundraiseup-test/topalov_yulian_34846104):**
+1. **Clone the [repository](git@github.com:iti92/fakestoreAPI_example.git):**
 
    ```bash
-   git clone git@github.com:fundraiseup-test/topalov_yulian_34846104.git
+   git clone git@github.com:iti92/fakestoreAPI_example.git
    ```
 
 ## Installation
