@@ -1,6 +1,8 @@
 # Fake API store example
 
-This is an mobile first app that use data from https://fakestoreapi.com/ developed by Topal Iulian.
+![ALT fake_api_example_thumbnail](https://i.postimg.cc/wTsdfYYc/fake-api-example-thumbnail.png)
+
+This is an mobile first app that use data from https://fakestoreapi.com/ developed by Iulian Topal.
 
 ## Prerequisites
 
