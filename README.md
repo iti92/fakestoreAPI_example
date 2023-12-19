@@ -1,6 +1,3 @@
-> [!IMPORTANT]  
-> This application use cookie. To use full functionality of this application, please run it on dev mode or upload it to a server.
-
 # Fake API store example
 
 This is an mobile first app that use data from https://fakestoreapi.com/ developed by Topal Iulian.
