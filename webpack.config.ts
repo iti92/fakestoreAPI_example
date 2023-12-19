@@ -9,9 +9,12 @@ import * as CopyPlugin from 'copy-webpack-plugin';
 const currentMode = process.env.NODE_ENV === 'production' ? 'production' : 'development';
 
 const config: Configuration = {
-  entry: './src/index.ts',
+  entry: {
+    index: './src/index.ts',
+    serviceWorker: './src/utils/serviceWorker.ts',
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -28,6 +31,14 @@ const config: Configuration = {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
     ],
   },
   devServer: {
@@ -42,6 +53,11 @@ const config: Configuration = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: 'body',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/pages/404.html',
+      filename: '404.html',
+      chunks: ['404'],
     }),
     new CopyPlugin({
       patterns: [{ from: 'public', to: 'public' }],

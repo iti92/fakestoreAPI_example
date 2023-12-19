@@ -1,0 +1,61 @@
+.dark-theme {
+  background-color: $dark-charcoal;
+  color: $white;
+
+  .product-card {
+    background-color: $ford-midnight-gray;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+
+  .breadcrumbs {
+    background-color: $ford-midnight-gray;
+    span {
+      color: $white;
+    }
+  }
+
+  .quantity,
+  .rating {
+    font-size: 0.9em;
+    color: $gray60;
+  }
+
+  .filter {
+    color: $white;
+  }
+
+  .modal-content {
+    background-color: $dark-charcoal;
+    color: $white;
+  }
+
+  .product-card.is-loading {
+    div {
+      background: $whisper;
+      background: linear-gradient(
+        110deg,
+        #202124 15%,
+        #0a0a0a 18%,
+        #202124 33%
+      );
+      border-radius: 5px;
+      background-size: 200% 100%;
+      animation: 1.5s shine linear infinite;
+    }
+  }
+
+  .preview {
+    background-color: $dark-charcoal;
+  }
+
+  .list {
+    a,
+    div {
+      color: $white;
+      
+      &:hover {
+        background-color: $ford-midnight-gray;
+      }
+    }
+  }
+}

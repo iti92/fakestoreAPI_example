@@ -1,11 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="/public/logo.png">
-</head>
-<body>
-</body>
+    <link rel="shortcut icon" href="/public/logo.png" />
+    <link href="https://css.gg/css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." />
+      </div>
+      <div class="theme-switch">
+        <div class="theme-switch-icon"></div>
+      </div>
+      <div id="nav">
+        <nav class="desktop-menu">
+          <ul>
+            <li><a href="404.html">Home</a></li>
+            <li><a href="404.html">Shop</a></li>
+            <li><a href="404.html">My Account</a></li>
+            <li><a href="404.html">Cart</a></li>
+            <li><a href="404.html">Logout</a></li>
+          </ul>
+        </nav>
+
+        <div class="hamburger-menu prevent-select">
+          <div id="toggleMenu" class="gg-menu"></div>
+        </div>
+      </div>
+    </header>
+    <div class="breadcrumbs">
+      <div><a href="#">Home</a> > <span class="category">Shop</span></div>
+      <div class="filter"><i class="gg-sort-az"></i> filter</div>
+    </div>
+    <div class="container"></div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="modal-close" id="closeModalBtn">&times;</span>
+        <div class="modal-container"></div>
+      </div>
+    </div>
+  </body>
 </html>

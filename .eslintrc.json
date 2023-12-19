@@ -10,7 +10,6 @@
         "plugin:@typescript-eslint/recommended",
         "prettier",
         "plugin:prettier/recommended",
-
         "airbnb"
     ],
     "parser": "@typescript-eslint/parser",
@@ -18,7 +17,19 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
+    "plugins": [
+        "@typescript-eslint", "plugin:import/errors","plugin:import/warnings",
+        "plugin:import/typescript"
+    ],
     "rules": {
-    }
+        "indent": ["error", 2]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"],
+            "extensions": [".js", ".ts"]
+          }
+        },
+      }
 }

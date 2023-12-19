@@ -1,9 +1,15 @@
 {
     "compilerOptions": {
-      "outDir": "./dist/",
+      "outDir": "./dist",
+      "rootDir": "./src",
       "target": "es5",
       "module": "commonjs",
-      "strict": true
-    }
+      "strict": true,
+      "baseUrl": "./",
+      "paths": {
+        "*": ["*"],
+        "src/*": ["src/*"]
+      }
+    },
+    "include": ["src/**/*.ts"]
 }
-  
